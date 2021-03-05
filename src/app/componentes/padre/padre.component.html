@@ -1,0 +1,7 @@
+<!--Sincronización automática entre un control de formulario y una variable, 
+    el valor de la variable se actualiza con el nuevo valor del input-->
+<input [(ngModel)]="valor" />
+<h1>Mi hijo me ha dicho {{valorHijo}}</h1>
+<hr />
+
+<app-hijo [valor]="valor" (textoCambiado)="textoCambiado($event)"></app-hijo>
